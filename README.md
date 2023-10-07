@@ -1,5 +1,9 @@
 # ansible-fileglob-lockup-extended
-the core fileglob lockup extended to be recursive and also hold python glob() function options
+the core `fileglob` lockup extended to be recursive and also hold python glob() function options
+
+Check the following thread in Stackoverflow and my answer for details and context:
+
+- https://stackoverflow.com/a/77251701/7668448
 
 ## fileglobr.py
 
@@ -22,6 +26,13 @@ You will need to add those files as plugins.
   - Refs
     - [Developing plugins](https://docs.ansible.com/ansible/latest/dev_guide/developing_plugins.html)
     - [lockup plugin](https://docs.ansible.com/ansible/latest/plugins/lookup.html#enabling-lookup-plugins)
+   
+## Usage
+
+Same as the old one but with the new names
+- `fileglobr` recursive and without any options
+- `fileglobe` the one with options
+  - `fileglob('', recursive=True, include_hidden=True)` (not added yet. Will update as soon as i will add it)
 
 ## Why wasn't it added and PR
 
